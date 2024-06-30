@@ -1,0 +1,14 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+button[mat-fab] {
+    z-index: 1000;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    display: block;
+}

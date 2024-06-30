@@ -1,0 +1,13 @@
+<mat-card appearance="outlined" class="card">
+  <mat-card-content *ngFor="let product of products">
+    <img [src]="product.image" alt="{{ product.title }}">
+    <div>
+      <ng-container *ngFor="let star of stars; index as i">
+        <mat-icon>{{ i < product.rating ? 'star' : 'star_border' }}</mat-icon>
+      </ng-container>
+    </div>
+    <p class="title">{{ product.title }}</p>
+    <p>{{ product.price | currency }}</p>
+    <p class="type">{{ product.description }}</p>
+  </mat-card-content>
+</mat-card>

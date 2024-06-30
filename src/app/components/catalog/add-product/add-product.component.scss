@@ -1,0 +1,60 @@
+:host {
+    display: block;
+  }
+  
+  mat-dialog-content {
+    padding: 16px; // Ajusta o preenchimento do conteúdo do diálogo
+    max-width: 400px; // Limita a largura máxima do conteúdo do diálogo
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    mat-form-field {
+      margin-bottom: 16px; // Espaçamento entre os campos do formulário
+      width: 100%; // Garante que os campos do formulário ocupem a largura completa disponível
+    }
+  
+    mat-radio-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px; // Espaçamento abaixo do grupo de botões de rádio
+      width: 100%; // Garante que o grupo de botões de rádio ocupe a largura completa disponível
+  
+      mat-radio-button {
+        margin-bottom: 8px; // Espaçamento entre os botões de rádio
+      }
+    }
+  
+    mat-dialog-actions {
+      display: flex;
+      justify-content: flex-end; // Alinha os botões à direita
+      gap: 8px; // Espaçamento entre os botões
+  
+      button {
+        min-width: 100px; // Define uma largura mínima para os botões
+      }
+    }
+
+    .currency-input {
+        display: flex;
+        align-items: center;
+        position: relative;
+      
+        .currency-symbol {
+          position: absolute;
+          left: 0.5rem; // Ajuste o valor conforme necessário
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 1rem;
+          pointer-events: none; // Certifique-se de que o símbolo não interfira na interação com o campo de entrada
+        }
+      
+        input {
+          flex: 1;
+          padding-left: 2rem; // Espaço suficiente para o símbolo dentro do campo de entrada
+          box-sizing: border-box; // Inclui padding e border na largura do campo de entrada
+          position: relative; // Necessário para ajustar o posicionamento do símbolo
+        }
+      }
+  }

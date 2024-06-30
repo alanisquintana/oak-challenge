@@ -1,0 +1,29 @@
+@import '../../../variables.scss';
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto;
+    width: 20rem;
+    height: fit-content;
+    border: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    background-color: #ffffff00;
+
+    img {
+        object-fit: cover;
+        width: 20rem;
+        height: auto;
+    }
+    
+    .title {
+        margin-top: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .type {
+        color: $product-type;
+    }
+}
