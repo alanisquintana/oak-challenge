@@ -1,29 +1,37 @@
 @import '../../../variables.scss';
 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem auto;
-    width: 20rem;
+    width: 16rem;
     height: fit-content;
     border: none;
     font-weight: 500;
-    font-size: 1.25rem;
-    background-color: #ffffff00;
+    font-size: 1rem;
+    background-color: transparent;
+    box-shadow: none;
 
     img {
         object-fit: cover;
-        width: 20rem;
+        width: 100%;
         height: auto;
     }
-    
+
     .title {
         margin-top: 1rem;
         letter-spacing: 1px;
     }
 
-    .type {
-        color: $product-type;
+    .description {
+        color: $product-description;
     }
 }

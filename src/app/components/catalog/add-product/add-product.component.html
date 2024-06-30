@@ -5,29 +5,36 @@
       <mat-label>Nome do Produto</mat-label>
       <input matInput formControlName="name" required>
     </mat-form-field>
-    
+
     <mat-form-field>
       <mat-label>Descrição</mat-label>
       <textarea matInput formControlName="description"></textarea>
     </mat-form-field>
-    
+
     <mat-form-field>
       <mat-label>Preço</mat-label>
-        <input 
-        matInput 
-        formControlName="price" 
-        type="text" 
+        <input
+        matInput
+        formControlName="price"
+        type="text"
         currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }"
         required>
     </mat-form-field>
-    
-    <mat-label>O produto está disponível?</mat-label>
-    <mat-radio-group formControlName="isAvailable">
-      <mat-radio-button value=true>Disponível</mat-radio-button>
-      <mat-radio-button value=false>Indisponível</mat-radio-button>
-    </mat-radio-group>
-    
-    
+
+    <div>
+      <label for="image">Imagem do Produto</label>
+      <input id="image" type="file" (change)="onFileChange($event)">
+    </div>
+
+    <div>
+      <mat-label>O produto está disponível?</mat-label>
+      <mat-radio-group formControlName="isAvailable">
+        <mat-radio-button value=true>Disponível</mat-radio-button>
+        <mat-radio-button value=false>Indisponível</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+
     <mat-dialog-actions>
       <button mat-button type="button" mat-dialog-close>Cancelar</button>
       <button mat-button type="submit">Cadastrar</button>

@@ -1,11 +1,18 @@
-<p>catalog-start</p>
+<button mat-fab (click)="openDialog()">
+    <mat-icon>add</mat-icon>
+</button>
 
-    <button mat-fab (click)="openDialog()">
-        <mat-icon>add</mat-icon>
-    </button>
+<div class="catalog-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Ordenar por Preço</mat-label>
+    <mat-select (selectionChange)="sortProducts($event.value)">
+      <mat-option value="asc">Menor para Maior</mat-option>
+      <mat-option value="desc">Maior para Menor</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <app-cards [products]="concatenatedProducts" class="catalog-cards"></app-cards>
 
-    <div class="catalog">
-        <app-cards [products]="products"></app-cards>
-    </div>
-
-<p>catalog-end</p>
+  <mat-paginator [length]="totalLength" [pageSize]="pageSize" (page)="onPageChange($event)" class="paginator">
+  </mat-paginator>
+</div>
