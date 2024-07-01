@@ -1,27 +1,50 @@
-# DesafioOak
+# Selecione o idioma desejado / Choose desired language
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+## [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Portuguese"/>](#desafio-oak) [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" alt="English"/>](#oak-challenge)
 
-## Development server
+<br />
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Desafio Oak
 
-## Code scaffolding
+Esse projeto foi desenvolvido para o processo seletivo da Oak Tecnologia. Consiste em uma listagem e formulário reativo com inserção de dados na listagem.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Utilizei Angular 18, onde fiz também uso de Angular Material e Font Awesome para desenvolvimento e estilização do projeto. Para persistência local, fiz uso de Local Storage.
 
-## Build
+## Executando o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para executar o projeto, basta instalar as dependências do mesmo, em primeiro momento:
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+E então executá-lo em servidor de desenvolvimento
 
-## Running end-to-end tests
+```
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+E então estará executando em ambiente local `http://localhost:4200/`.
 
-## Further help
+# Oak Challenge
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project was developed for the selection process at Oak Tecnologia. It consists of a listing and reactive form with data insertion into the list.
+
+I used Angular 18, along with Angular Material and Font Awesome for development and styling. For local persistence, I utilized Local Storage.
+
+## Running the Project
+
+To run the project, first install its dependencies:
+
+```
+npm install
+```
+
+Then, start it with the development server:
+
+```
+ng serve
+```
+
+The project will be running locally at `http://localhost:4200/`.
