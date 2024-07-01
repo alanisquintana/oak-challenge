@@ -8,8 +8,13 @@
         </ng-container>
       </div>
       <p class="title">{{ product.title }}</p>
-      <p>{{ product.price | currency }}</p>
+      <p>{{ formatPrice(product.price) }}</p>
       <p class="description">{{ product.description }}</p>
+      <div class="availability">
+        <span [ngClass]="{'available': product.isAvailable, 'out-of-stock': !product.isAvailable}">
+          {{ product.isAvailable ? 'DISPONÍVEL' : 'ESGOTADO' }}
+        </span>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>

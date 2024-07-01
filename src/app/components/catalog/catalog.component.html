@@ -3,13 +3,12 @@
 </button>
 
 <div class="catalog-container">
-  <mat-form-field appearance="fill">
-    <mat-label>Ordenar por Preço</mat-label>
-    <mat-select (selectionChange)="sortProducts($event.value)">
-      <mat-option value="asc">Menor para Maior</mat-option>
-      <mat-option value="desc">Maior para Menor</mat-option>
-    </mat-select>
-  </mat-form-field>
+  <label for="sortPrice">Ordenar por Preço</label>
+  <select id="sortPrice" class="order" (change)="onSortChange($event)">
+    <option value="asc">Menor para Maior</option>
+    <option value="desc">Maior para Menor</option>
+  </select>
+  
   
   <app-cards [products]="concatenatedProducts" class="catalog-cards"></app-cards>
 

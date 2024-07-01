@@ -21,14 +21,14 @@
         required>
     </mat-form-field>
 
-    <div>
-      <label for="image">Imagem do Produto</label>
+    <div class="img-input">
+      <label for="image" class="img-input-label">Imagem do Produto:</label>
       <input id="image" type="file" (change)="onFileChange($event)">
     </div>
 
-    <div>
+    <div class="available">
       <mat-label>O produto está disponível?</mat-label>
-      <mat-radio-group formControlName="isAvailable">
+      <mat-radio-group formControlName="isAvailable" class="available">
         <mat-radio-button value=true>Disponível</mat-radio-button>
         <mat-radio-button value=false>Indisponível</mat-radio-button>
       </mat-radio-group>

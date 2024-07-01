@@ -6,32 +6,56 @@
   grid-gap: 1rem;
   margin: 2rem auto;
   max-width: 1200px;
+
+  .rating {
+    color: $title-oak;
+  }
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16rem;
-    height: fit-content;
-    border: none;
-    font-weight: 500;
-    font-size: 1rem;
-    background-color: transparent;
-    box-shadow: none;
+  display: flex;
+  flex-direction: column; /* Ajuste para o layout vertical dos itens */
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: fit-content;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+  box-shadow: none;
+  position: relative; /* Necessário para o posicionamento absoluto do letreiro */
 
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-    }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
 
-    .title {
-        margin-top: 1rem;
-        letter-spacing: 1px;
-    }
+  .title {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+  }
 
-    .description {
-        color: $product-description;
-    }
+  .description {
+    color: $product-description;
+  }
+
+  .availability {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.75rem 2rem 0rem 0rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.875rem; 
+  }
+
+  .available {
+    color: $title-oak;
+  }
+
+  .out-of-stock {
+    color: #d32f2f;
+  }
 }

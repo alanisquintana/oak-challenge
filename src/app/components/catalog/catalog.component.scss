@@ -5,6 +5,10 @@
     gap: 1rem;
     margin: 2rem auto;
     max-width: 1200px;
+
+    .order {
+        border: none;
+    }
 }
 
 .catalog-cards {
@@ -18,13 +22,8 @@
 button[mat-fab] {
     z-index: 1000;
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 3.6rem;
+    right: 3.6rem;
     display: block;
 }
 
-.paginator {
-    align-self: center;
-    margin-top: 2rem;
-    background-color: transparent;
-}

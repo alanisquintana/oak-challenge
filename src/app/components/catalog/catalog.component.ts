@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CardsComponent } from './cards/cards.component';
 import { Product } from '../../models/product.model';
@@ -6,17 +6,39 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { MatPaginatorIntl, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { LocalStorageService } from '../../services/local-storage.service';
 import { HARDCODED_PRODUCTS } from '../../data/default-products.data';
 import { MatSelectModule } from '@angular/material/select';
+
+@Injectable()
+export class CustomPaginatorIntl extends MatPaginatorIntl {
+  override itemsPerPageLabel = 'Itens por página';
+  override nextPageLabel = 'Próxima página';
+  override previousPageLabel = 'Página anterior';
+  override firstPageLabel = 'Primeira página';
+  override lastPageLabel = 'Última página';
+
+  override getRangeLabel = function (page: number, pageSize: number, length: number) {
+    if (length === 0 || pageSize === 0) {
+      return '0 de ' + length;
+    }
+    length = Math.max(length, 0);
+    const startIndex = page * pageSize;
+    const endIndex = Math.min(startIndex + pageSize, length);
+    return startIndex + 1 + ' - ' + endIndex + ' de ' + length;
+  };
+}
 
 @Component({
   selector: 'app-catalog',
   standalone: true,
   imports: [CardsComponent, MatButtonModule, MatDividerModule, MatIconModule, MatPaginatorModule, MatSelectModule],
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.scss']
+  styleUrls: ['./catalog.component.scss'],
+  providers: [
+    { provide: MatPaginatorIntl, useClass: CustomPaginatorIntl }
+  ],
 })
 export class CatalogComponent implements OnInit {
   defaultProducts: Product[] = HARDCODED_PRODUCTS;
@@ -87,4 +109,10 @@ export class CatalogComponent implements OnInit {
   sortProducts(order: 'asc' | 'desc'): void {
     this.sortOrder = order;
   }
+  
+  onSortChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    this.sortProducts(target.value as 'asc' | 'desc');
+  }
 }
+
