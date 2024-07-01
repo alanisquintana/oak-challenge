@@ -1,8 +1,10 @@
-:root {
-    --mdc-fab-container-color: rgb(255, 0, 0);
-}
-
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.mat-accent.mat-mdc-fab, .mat-accent.mat-mdc-mini-fab {
+    --mdc-fab-container-color: #47B368;
+}
+
+.mat-mdc-fab .mat-icon {
+    color: #050505;
+}
