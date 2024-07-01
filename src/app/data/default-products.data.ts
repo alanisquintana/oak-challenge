@@ -3,7 +3,7 @@ import { Product } from '../models/product.model';
 export const HARDCODED_PRODUCTS: Product[] = [
   {
     image: '/products/sneaker01.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Jordan Delta 3 Low',
     price: 693.49,
     description: 'Casual',
@@ -19,7 +19,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker03.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike MC Trainer 2',
     price: 569.99,
     description: 'Treino & Academia',
@@ -35,7 +35,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker05.jpg',
-    rating: 5,
+    rating: 3,
     title: 'Tênis Nike E-Series AD',
     price: 427.49,
     description: 'Casual',
@@ -43,7 +43,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker06.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike Tech Hera',
     price: 569.99,
     description: 'Casual',
@@ -55,7 +55,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
     title: 'Air Jordan 1 Retro High OG',
     price: 1519.99,
     description: 'Casual',
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     image: '/products/sneaker08.jpg',
@@ -67,7 +67,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker09.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike Air Max Excee',
     price: 560.4,
     description: 'Casual',
@@ -79,11 +79,11 @@ export const HARDCODED_PRODUCTS: Product[] = [
     title: 'Tênis Nike Air Max Solo',
     price: 484.49,
     description: 'Casual',
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     image: '/products/sneaker11.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike Precision 7',
     price: 474.99,
     description: 'Basquete',
@@ -95,11 +95,11 @@ export const HARDCODED_PRODUCTS: Product[] = [
     title: 'Tênis Nike Renew Ride 3',
     price: 569.99,
     description: 'Corrida',
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     image: '/products/sneaker13.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike Precision 6',
     price: 569.99,
     description: 'Basquete',
@@ -111,7 +111,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
     title: 'Tênis Nike Pegasus 40',
     price: 664.99,
     description: 'Corrida',
-    isAvailable: true,
+    isAvailable: false,
   },
   {
     image: '/products/sneaker15.jpg',
@@ -123,7 +123,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker16.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Jordan Stay Loyal 3',
     price: 664.99,
     description: 'Basquete',
@@ -131,7 +131,7 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker17.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Dunk Low',
     price: 854.99,
     description: 'Casual',
@@ -139,11 +139,10 @@ export const HARDCODED_PRODUCTS: Product[] = [
   },
   {
     image: '/products/sneaker18.jpg',
-    rating: 5,
+    rating: 4,
     title: 'Tênis Nike Air Max Solo',
     price: 750.49,
     description: 'Casual',
-    isAvailable: true,
+    isAvailable: false,
   },
-  // Adicione mais produtos aqui, se necessário
 ];
