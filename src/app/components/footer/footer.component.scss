@@ -1,7 +1,28 @@
+@import '../../variables.scss';
+
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5rem;
+
+  a {
+    text-decoration: none;
+
+    button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      i {
+        color: $title-oak;
+      }
+    }
   }
-  
+}

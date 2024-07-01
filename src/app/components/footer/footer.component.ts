@@ -12,6 +12,4 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent {
-
-}
+export class FooterComponent {}
