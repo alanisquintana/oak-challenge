@@ -11,6 +11,9 @@ Esse projeto foi desenvolvido para o processo seletivo da Oak Tecnologia. Consis
 
 Utilizei Angular 18, onde fiz também uso de Angular Material e Font Awesome para desenvolvimento e estilização do projeto. Para persistência local, fiz uso de Local Storage.
 
+## Deploy
+&#x1F517; https://oak-challenge.vercel.app/
+
 ## Executando o projeto
 
 Para executar o projeto, basta instalar as dependências do mesmo, em primeiro momento:
