@@ -1,9 +1,6 @@
-# Selecione o idioma desejado / Choose desired language
-
-## [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Portuguese"/>](#desafio-oak) [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" alt="English"/>](#oak-challenge)
+# Selecione o idioma desejado / Choose desired language [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png" alt="Portuguese"/>](#desafio-oak) [<img align="right" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" alt="English"/>](#oak-challenge)
 
 <br />
----
 
 # Desafio Oak
 
