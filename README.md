@@ -66,13 +66,13 @@ The challenge consists of creating a product listing and a functional form for a
 
 # Tecnologies
 
-I used TypeScript and Angular 18 for development, and also employed SCSS, HTML5, Angular Material, and Font Awesome for styling and visual presentation. For data storage, I utilized Local Storage.
+I have used TypeScript and Angular 18 for development, and also employed SCSS, HTML5, Angular Material, and Font Awesome for styling and visual presentation. For data persistance, I have utilized Local Storage.
 
 </br>
 
 ## Running the Project
 
-To run the project, first install its dependencies:
+To run the project, first install it's dependencies:
 
 ```
 npm install
