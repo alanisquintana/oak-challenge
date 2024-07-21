@@ -43,7 +43,6 @@ O projeto estará executando em ambiente local `http://localhost:4200/`.
 <div align="center"> 
 <a href = "mailto:alanisquintana.dev@gmail.com"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&color=red&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/alanis-quintana/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&logoWidth=20&logoHeight=20" style="border-radius: 30px" target="_blank"></a>
-<a href="https://instagram.com/devalanisquintana/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </div>
 
 </br>
@@ -93,7 +92,6 @@ The project will be running locally at `http://localhost:4200/`.
 <div align="center"> 
 <a href = "mailto:alanisquintana.dev@gmail.com"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&color=red&logoColor=white" target="_blank"></a>
 <a href="https://www.linkedin.com/in/alanis-quintana/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5&logoWidth=20&logoHeight=20" style="border-radius: 30px" target="_blank"></a>
-<a href="https://instagram.com/devalanisquintana/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </div>
   
 </br>
